@@ -1,0 +1,50 @@
+<?php
+session_start();
+
+    $_SESSION;
+?>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leaf NOW</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header class="whole-header">
+            <h1 class="leaf leaf-now-large"> Leaf NOW</h1>
+            <header class="header2">
+                <div class="container1">
+                    <div class="header1">
+                        <h3>LOGIN FORM</h3>
+                    </div>
+                    <form action="insert.php" method="POST" class="form" id="form" autocomplete="off">
+                        <div class="form-control">
+                            <label>Username</label>
+                            <input type="text" name="user_name" id="username" placeholder="Enter your fullname">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error Msg</small>
+                        </div>
+                        <div class="form-control">
+                            <label>Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error Msg</small>
+                        </div>
+                        <input type="submit" value="Submit" class="btn" name="">
+                    </form>    
+                </div>
+            </header>
+        </header>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="login_validate.js"></script>
+    </body>
+</html>
